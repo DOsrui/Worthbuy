@@ -32,7 +32,7 @@ class FlaskClientTestCase(unittest.TestCase):
         })
         self.assertTrue(response.status_code == 302)
 
-        # login with the new account
+        # login with the new accoun
         response = self.client.post(url_for('auth.login'), data={
             'email': 'deabal@gdut.com',
             'password': 'deabal666'
